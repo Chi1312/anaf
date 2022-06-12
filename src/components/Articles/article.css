@@ -1,0 +1,194 @@
+.article-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+}
+
+.article {
+  background-color: aliceblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.6rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid var(--bg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  min-height: 15rem;
+  outline: 1px solid #333;
+}
+
+.article-text {
+  margin-left: 1rem;
+  font-size: 1.2rem !important;
+}
+
+.article-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto;
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  outline: 1px solid var(--bg);
+  border-bottom: 2px solid #333;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.article-button:hover {
+  color: #db6c11;
+  border-bottom: 2px solid #db6c11;
+  cursor: pointer;
+}
+
+.article-button :active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  border-bottom: none;
+}
+
+.article:hover {
+  border-bottom: 3px solid #db6c11;
+}
+
+.article-link {
+  font-size: 1.4rem;
+  color: #333;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.article-link:hover {
+  color: #db6c11;
+  text-decoration: underline;
+}
+
+.article-date {
+  color: #333;
+}
+
+.article-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.article-header {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--bg);
+  border-bottom: 4px solid #111;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.5rem 0;
+  color: aliceblue;
+  font-weight: 500;
+  outline: 1px solid #333;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.article-header:hover {
+  border-bottom: 4px solid #db6c11;
+  background-color: var(--bg);
+  color: #db6c11;
+}
+
+.article-card {
+  width: 100%;
+  background-color: #fff;
+  min-height: 10rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 3px solid #333;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  outline: 1px solid #333;
+  overflow: hidden;
+}
+
+.article-card:hover {
+  border-bottom: 3px solid #db6c11;
+  -webkit-filter: saturate(1.2);
+          filter: saturate(1.2);
+}
+
+.article-card-image {
+  width: 40%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-right: 1px solid #333;
+}
+
+.article-card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 10px;
+  margin-top: 0.5rem;
+}
+
+.article-card-content-title {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  padding-right: 0.5rem;
+}
+
+.article-card-content-location {
+  font-size: 1.2rem;
+  color: #333;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 0.4rem;
+}
+
+.article-card-content-location:hover {
+  color: #db6c11;
+  text-decoration: underline;
+}
+
+.article-card-content-phone {
+  font-size: 1.2rem;
+  color: #333;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.article-card-content-phone:hover {
+  color: #db6c11;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=article.css.map */
